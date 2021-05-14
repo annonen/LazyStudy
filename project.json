@@ -1,0 +1,33 @@
+{
+  "assets": [],
+  "build": {
+    "build_id": "92276736-128",
+    "build_number": 128,
+    "build_time": 1609850182248,
+    "release": false
+  },
+  "encryptLevel": 1,
+  "useFeatures": [],
+  "icon": "res/logo.png",
+  "launchConfig": {
+    "displaySplash": false,
+    "hideLogs": false,
+    "splashText": "Powered by Auto.js Pro",
+    "stableMode": false
+  },
+  "main": "main.js",
+  "name": "懒人学习",
+  "optimization": {
+    "removeOpenCv": true,
+    "unusedResources": true
+  },
+  "packageName": "com.lghlmcl",
+  "scripts": {},
+  "signingConfig": {
+    "alias": "",
+    "keystore": "",
+    "uuid": ""
+  },
+  "versionCode": 2,
+  "versionName": "2021.03.08"
+}
