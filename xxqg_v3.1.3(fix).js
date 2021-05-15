@@ -36,7 +36,7 @@ var qCount = randomNum(5, 7);//挑战答题每轮答题数(5~7随机)
 var myScores = {};//分数
 
 var customize_flag = false;//自定义运行标志
-
+let begin = require("./zhengshangyou.js");
 /**
  * @description: 生成从minNum到maxNum的随机数
  * @param: minNum-较小的数
@@ -1371,6 +1371,34 @@ function main() {
     }
     if (myScores['本地频道'] != 1) {
         localChannel();//本地频道
+    }
+    if (myScores['四人赛'] !=5){
+        text("我的").click();
+        while (!textContains("我要答题").exists());
+        delay(1);
+        click("我要答题");
+        while (!text("答题练习").exists());
+        delay(1);
+        className("android.view.View").text("答题练习").findOne().parent().child(8).click();
+        console.log("开始四人赛")
+        delay(2);
+        begin();
+        back(); delay(1);
+        back(); delay(1);
+    }
+    if (myScores['双人对战'] !=2){
+        text("我的").click();
+        while (!textContains("我要答题").exists());
+        delay(1);
+        click("我要答题");
+        while (!text("答题练习").exists());
+        delay(1);
+        className("android.view.View").text("答题练习").findOne().parent().child(9).click();
+        console.log("开始双人对战")
+        delay(2);
+        begin();
+        back(); delay(1);
+        back(); delay(1);
     }
     if (vCount != 0) {
         videoStudy_news();//看视频

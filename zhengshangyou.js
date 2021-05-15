@@ -1014,7 +1014,6 @@ function main() {
         console.log("! 请手动打开答题界面再重试 !");
         console.log("争上游和双人挑战在等待页即可（即在 开始挑战/对战 的界面）");
     }
-    console.hide();
 }
 
 // main()
